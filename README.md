@@ -1,6 +1,10 @@
 # HapticsKit
 Quick access to iOS haptics functions for Unity.
 
+## Requirements
+- A recent version of Unity
+- An iPhone 7 or later running iOS 10 or later
+
 ## Installation
 
 **Recommended Installation**\
