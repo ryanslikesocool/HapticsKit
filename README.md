@@ -14,7 +14,7 @@ https://github.com/ryanslikesocool/HapticsKit.git \
 Add
 
 Not-so Recommended Installation\
-Get the latest release\
+Get the latest [release](https://github.com/ryanslikesocool/HapticsKit/releases)\
 Open with the desired Unity project\
 Import into the Plugins folder
 
@@ -28,4 +28,19 @@ HapticsController.NotificationFeedback(NotificationType.Success);
 HapticsController.ImpactFeedback(ImpactType.Light);
 HapticsController.SelectionFeedback();
 //etc...
+```
+
+Notification and Impact feedbacks have a range of options
+```cs
+// Notification
+NotificationType.Success
+NotificationType.Warning
+NotificationType.Error
+
+//Impact
+ImpactType.Light
+ImpactType.Medium
+ImpactType.Heavy
+ImpactType.Soft
+ImpactType.Rigid
 ```
