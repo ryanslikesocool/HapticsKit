@@ -1,8 +1,15 @@
-// Made with love by Ryan Boyer http://ryanjboyer.com <3
+// Developed With Love by Ryan Boyer http://ryanjboyer.com <3
 
-#include "HapticsKit.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreHaptics/CoreHaptics.h>
+//#import "UnityAppController.h"
 
 extern "C" {
+bool supportsHaptics() {
+	return [[CHHapticEngine capabilitiesForHardware] supportsHaptics];
+}
+
 void notificationFeedback(const int *idx) {
 	NSInteger newIdx = (NSInteger) idx;
 	UINotificationFeedbackType style = (UINotificationFeedbackType) newIdx;
@@ -11,7 +18,7 @@ void notificationFeedback(const int *idx) {
 	gen = NULL;
 }
 
-void impactFeedback(int *idx) {
+void impactFeedback(const int *idx) {
 	NSInteger newIdx = (NSInteger) idx;
 	UIImpactFeedbackStyle style = (UIImpactFeedbackStyle) newIdx;
 	UIImpactFeedbackGenerator *gen = [[UIImpactFeedbackGenerator alloc] initWithStyle:(style)];

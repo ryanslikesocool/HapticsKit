@@ -1,7 +1,7 @@
 {
   "name": "com.developedwithlove.hapticskit",
   "displayName": "HapticsKit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "unity": "2020.1",
   "description": "Quick access to iOS haptics functions",
   "documentationUrl": "https://github.com/ryanslikesocool/HapticsKit",
@@ -10,5 +10,6 @@
     "email": "ryanjboyer@gmail.com",
     "url": "http://ryanjboyer.com/"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "type": "library"
 }
