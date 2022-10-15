@@ -17,7 +17,7 @@ Quick access to iOS haptics functions for Unity.
 - Import into the Plugins folder
 
 ## Usage
-Import HapticsKit into a C# script with `using HapticsKit;`\
+Import HapticsKit into a C# script with `using HapticsKit;`
 
 Check if the current device supports haptics.
 ```cs
